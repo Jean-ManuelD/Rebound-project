@@ -137,6 +137,20 @@ h4 {
 
 
 
+.anim {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.anim:hover {
+    transform: scale(1.05);
+}
+
+
+.logo_rs {
+    padding: 1rem;
+}
+
+
 /*--------------------------------------------------------------- HEADER -----------------------------------------------------------------------*/
 
 .landing_header {
@@ -251,11 +265,16 @@ section.selection {
     /*width:100%;*/
     min-width:280px;
     max-width: 400px;
-
-
-     /*gérer automatiquement la taille de mon élément : width :calc(100% / 3);  où 100% est la taille sur laquelle on souhaite gérer le positionnement et 3 le nb d'élément à positionner.
+    margin: 1rem 0;
+    /*gérer automatiquement la taille de mon élément : width :calc(100% / 3);  où 100% est la taille sur laquelle on souhaite gérer le positionnement et 3 le nb d'élément à positionner.
      On rajouter un gap: 2rem; pour gérer l'espacement, à positionner dans l'élément parent.*/
+    transition: transform 0.4s ease, opacity 0.4s ease;
+
 }
+
+
+
+
 
 .txt_produit {
     display: flex;
@@ -331,7 +350,7 @@ section.selection {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-
+overflow-x: hidden;
   padding: 2rem 0;
 }
 
@@ -422,6 +441,7 @@ section.selection {
     justify-content: center;
     gap: 40px;
 }
+
 
 .logo_rs img {
     max-width: 48px;
