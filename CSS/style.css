@@ -326,7 +326,7 @@ section.selection {
 .avis {
   color: white;
   background-color: inherit;
-  transition: opacity 0.25s ease;
+
   opacity: 1;
   display:flex;
   flex-direction: row;
@@ -337,6 +337,7 @@ section.selection {
 
 .avis_texte_auteur {
     display: flex;
+    transition: opacity 0.25s ease;
     flex-direction: column;
     justify-content: space-between;
     gap:1rem;

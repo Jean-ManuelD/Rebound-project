@@ -19,7 +19,7 @@ const avis = [
 let indexAvis =0;
 
 //récupérer dans le DOM
-const avisSection = document.querySelector(".avis");
+const avisSection = document.querySelector(".avis_texte_auteur");
 const texte = document.querySelector("#avisTexte");
 const auteur = document.querySelector("#avisAuteur");
 const avisPrev = document.querySelector("#avisPrev");
