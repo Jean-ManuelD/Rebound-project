@@ -32,6 +32,7 @@ img {
     display:block;
     width:100%;
     max-width: 520px;
+    cursor: pointer;
 }
 
 section {
@@ -99,7 +100,8 @@ h4 {
     text-transform: uppercase;
     border-radius: 4px;
     padding: 16px 32px;
-    text-decoration: none;    
+    text-decoration: none; 
+    cursor: pointer;  
 }
 
 .cta_white{
@@ -111,6 +113,7 @@ h4 {
     border-radius: 4px;
     padding: 16px 32px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .cta_black{
@@ -123,6 +126,7 @@ h4 {
     padding: 16px 32px;
     border-style: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .cta_jaune:hover{
@@ -135,7 +139,9 @@ h4 {
     color:black;
 }
 
-
+.logo_rs {
+    cursor: pointer;
+}
 
 .anim {
     transition: transform 0.4s ease, opacity 0.4s ease;
@@ -145,14 +151,10 @@ h4 {
     transform: scale(1.05);
 }
 
-
-.logo_rs {
-    padding: 1rem;
-}
-
-
 /*--------------------------------------------------------------- HEADER -----------------------------------------------------------------------*/
-
+#toTop {
+    cursor: pointer;
+}
 .landing_header {
 
     height:600px;
@@ -269,6 +271,7 @@ section.selection {
     /*gérer automatiquement la taille de mon élément : width :calc(100% / 3);  où 100% est la taille sur laquelle on souhaite gérer le positionnement et 3 le nb d'élément à positionner.
      On rajouter un gap: 2rem; pour gérer l'espacement, à positionner dans l'élément parent.*/
     transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
 
 }
 
@@ -389,6 +392,7 @@ overflow-x: hidden;
     margin-top: 3rem;*/
     border-style: none;
     background-color: #304CFF;
+    cursor: pointer;
 }
 
 #avisNext {
@@ -396,7 +400,8 @@ overflow-x: hidden;
     right: 1rem;
     margin-top: 3rem;*/
     border-style: none;
-    background-color: #304CFF; 
+    background-color: #304CFF;
+    cursor: pointer;
 }
 
 
@@ -563,6 +568,15 @@ footer {
     margin: 1rem auto 0;
 }
 
+.mentions_footer {
+    cursor: pointer;
+    color:#F5E6DA;
+    text-decoration: none;
+}
+
+.mentions_footer:hover {
+    text-decoration: underline;
+}
 
 
 
