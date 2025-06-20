@@ -364,6 +364,7 @@ overflow-x: hidden;
     transition: opacity 0.25s ease;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap:1rem;
     width:90%;
 }
@@ -377,13 +378,12 @@ overflow-x: hidden;
 }
 
 #avisTexte {
-
     text-align: center;
     font-style: italic;
+    max-width:50%;
 }
 
 #avisAuteur {
-
     text-align: center;
 }
 
@@ -686,6 +686,13 @@ header {
     padding:0 2.1rem;
 
 
+}
+#avisTexte {
+    font-size: 1.5rem;
+}
+
+#avisAuteur {
+    font-size: 1.5rem;
 }
 
 .avis {
