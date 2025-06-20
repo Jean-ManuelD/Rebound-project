@@ -32,6 +32,7 @@ img {
     display:block;
     width:100%;
     max-width: 520px;
+    cursor: pointer;
 }
 
 section {
@@ -45,6 +46,7 @@ section {
     gap:1rem;
     width:90%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 
@@ -99,7 +101,8 @@ h4 {
     text-transform: uppercase;
     border-radius: 4px;
     padding: 16px 32px;
-    text-decoration: none;    
+    text-decoration: none; 
+    cursor: pointer;  
 }
 
 .cta_white{
@@ -111,6 +114,7 @@ h4 {
     border-radius: 4px;
     padding: 16px 32px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .cta_black{
@@ -123,6 +127,7 @@ h4 {
     padding: 16px 32px;
     border-style: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .cta_jaune:hover{
@@ -135,10 +140,22 @@ h4 {
     color:black;
 }
 
+.logo_rs {
+    cursor: pointer;
+}
 
+.anim {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.anim:hover {
+    transform: scale(1.05);
+}
 
 /*--------------------------------------------------------------- HEADER -----------------------------------------------------------------------*/
-
+#toTop {
+    cursor: pointer;
+}
 .landing_header {
 
     height:600px;
@@ -233,8 +250,9 @@ section.selection {
     justify-content: start;
     gap:1rem;
     width: 100%;
-    overflow-x: scroll;
+    overflow: hidden;
     padding:0 2.1rem;
+
 
 
 }
@@ -251,11 +269,19 @@ section.selection {
     /*width:100%;*/
     min-width:280px;
     max-width: 400px;
-
-
-     /*gérer automatiquement la taille de mon élément : width :calc(100% / 3);  où 100% est la taille sur laquelle on souhaite gérer le positionnement et 3 le nb d'élément à positionner.
+    margin: 1rem 0;
+    /*gérer automatiquement la taille de mon élément : width :calc(100% / 3);  où 100% est la taille sur laquelle on souhaite gérer le positionnement et 3 le nb d'élément à positionner.
      On rajouter un gap: 2rem; pour gérer l'espacement, à positionner dans l'élément parent.*/
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+
+
 }
+
+
+
+
 
 .txt_produit {
     display: flex;
@@ -326,17 +352,18 @@ section.selection {
 .avis {
   color: white;
   background-color: inherit;
-  transition: opacity 0.25s ease;
+
   opacity: 1;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-
+overflow-x: hidden;
   padding: 2rem 0;
 }
 
 .avis_texte_auteur {
     display: flex;
+    transition: opacity 0.25s ease;
     flex-direction: column;
     justify-content: space-between;
     gap:1rem;
@@ -369,6 +396,7 @@ section.selection {
     margin-top: 3rem;*/
     border-style: none;
     background-color: #304CFF;
+    cursor: pointer;
 }
 
 #avisNext {
@@ -376,7 +404,8 @@ section.selection {
     right: 1rem;
     margin-top: 3rem;*/
     border-style: none;
-    background-color: #304CFF; 
+    background-color: #304CFF;
+    cursor: pointer;
 }
 
 
@@ -421,6 +450,7 @@ section.selection {
     justify-content: center;
     gap: 40px;
 }
+
 
 .logo_rs img {
     max-width: 48px;
@@ -542,6 +572,15 @@ footer {
     margin: 1rem auto 0;
 }
 
+.mentions_footer {
+    cursor: pointer;
+    color:#F5E6DA;
+    text-decoration: none;
+}
+
+.mentions_footer:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -715,7 +754,6 @@ header {
     justify-content: center;
     gap:1rem;
     width: 100%;
-    overflow-x: scroll;
     padding:0 2.1rem;
 
 

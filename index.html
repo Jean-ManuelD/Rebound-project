@@ -1,47 +1,14 @@
 <!DOCTYPE html>
-<!--
-html = balise
-lang = attribut
-fr = valeur de l'attribut
--->
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">  <!-- encodage pour les caractères spéciaux -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- gérer le responsive -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Landing page</title>
     <link rel="icon" href="res\img\favicon.ico"  type="image/x-icon"/>
 </head>
 <body>
-
-<!-- 
-    Les balises sémantiques : 
-        - header => créer des en-tête (on peut l'utiliser plusieurs fois dans une page) => ca peut être autant l'en-tête du site que l'en-tête d'une section
-        - main => Contenu principal de la page ! A utiliser 1 seul fois dans une page ! 
-        - section => bloc thématique (on peut l'utiliser plusieurs fois dans une page)
-        - article => à placer dans une section ! ils sont tous ressemblant (en terme d'UI)
-        - footer => pied de page
-        - h1 à h6 => titres. Attention, le H1 est prèsent qu'une seul fois dans la page ! Faire attention à la hiérarchisation des titres. h1 => principal, h2 sous titre, h3, sous sous titre...
-        - p => paragraphe. 
-        - a => lien avec des attributs : href => chemin sur lequel le lien pointe
-        - img => image  aevc 2 attributs minimum : src => source de l'image // alt => texte alternatif de l'image
-        - form => formulaire 
-            - input / label 
-            - button : NE s'UTILISE QUE DANS UN FORMULAIRE !!!! 
-
-
-    Les balises non sémantiques de base : 
-      - div : regrouper des éléments
-      - span : aucun impact sémantique / permet de modifier un élément en CSS$
-    
-    
-    Règles de base : 
-      - 1 seul h1 par page ! 
-      - On n'utilise PAS de balise <br> !!!!!
-      - On organise son HTML en bloc logique  (donc avec des balises sémantiques)
-      - on commente son code pour mieux s'y retrouver ! 
-  -->
-
   
 <header>
     <div class="landing_header">
@@ -54,7 +21,7 @@ fr = valeur de l'attribut
 
         <div class="txt_header">
             <h1 class="accroche">Prêt pour la suite ?</h1>
-            <span class="subtitle_header">Découvrez nos nouveautés !</span> <!--à styliser en cap-->
+            <span class="subtitle_header">Découvrez nos nouveautés !</span>
         </div>
         <div class="cta"><a class ="cta_jaune" href="#">Je jette un oeil</a></div>
 
@@ -77,11 +44,11 @@ fr = valeur de l'attribut
 <!------------------------------- SELECTION PROMO ------------------------------->
 
 
-<section class="selection"><!--à styliser en CTA fond blanc cassé-->
+<section class="selection">
 
     <div class="txt_selection">
 
-        <h2 class="titre_selection">Notre sélection pour vous à<span class="remise">-10%</span> </h2>  <!-- -10% à styliser en gras sur fond jaune-->
+        <h2 class="titre_selection">Notre sélection pour vous à<span class="remise">-10%</span> </h2>
         
 
         <p>Précommandez maintenant et obtenez une remise immédiate de 10%.</p>
@@ -89,10 +56,6 @@ fr = valeur de l'attribut
 
    </div>
 
-
-
-
-    <!--Les articles sont à placer dans un slider-->
     <div class="slider">
 
     <article class="promo anim">
@@ -104,7 +67,7 @@ fr = valeur de l'attribut
            <h3 class="nom_produit">Basket New Gen - REBOUND ONE</h3>
 
          <div class="prix">
-            <div><span class="nouveau_prix">89.99€</span><span class="remise2">-10%</span></div> <!--à styliser en gros pour le prix et en gras sur fond jaune pour la remise-->
+            <div><span class="nouveau_prix">89.99€</span><span class="remise2">-10%</span></div>
             <p class="ancien_prix">99.99€</p>
         </div>
         </div>
@@ -119,7 +82,7 @@ fr = valeur de l'attribut
            <h3 class="nom_produit">Basket New Gen - REBOUND ONE</h3>
 
          <div class="prix">
-            <div><span class="nouveau_prix">89.99€</span><span class="remise2">-10%</span></div> <!--à styliser en gros pour le prix et en gras sur fond jaune pour la remise-->
+            <div><span class="nouveau_prix">89.99€</span><span class="remise2">-10%</span></div>
             <p class="ancien_prix">99.99€</p>
         </div>
         </div>
@@ -134,7 +97,7 @@ fr = valeur de l'attribut
            <h3 class="nom_produit">Basket New Gen - REBOUND ONE</h3>
 
          <div class="prix">
-            <div><span class="nouveau_prix">89.99€</span><span class="remise2">-10%</span></div> <!--à styliser en gros pour le prix et en gras sur fond jaune pour la remise-->
+            <div><span class="nouveau_prix">89.99€</span><span class="remise2">-10%</span></div>
             <p class="ancien_prix">99.99€</p>
         </div>
         </div>
@@ -151,7 +114,7 @@ fr = valeur de l'attribut
     </ul>
     </div>
     
-    <div class="cta"><a class ="cta_jaune" href="#">Je jette un oeil</a></div> <!--à styliser en CTA fond jaune-->
+    <div class="cta"><a class ="cta_jaune" href="#">Je jette un oeil</a></div>
 
 </section>
 
@@ -179,7 +142,7 @@ fr = valeur de l'attribut
 
 <div class="some_newsletter">
 
-<section class="SOME"><!--à styliser en CTA fond bleu très clair-->
+<section class="SOME">
 
     <div class="titre_some">
         <h2 class="evenement">Évenements</h2>
@@ -203,7 +166,7 @@ fr = valeur de l'attribut
 <!------------------------------- Newsletter ------------------------------->
 
 
-<section class="newsletter"> <!--à styliser en CTA fond jaune-->
+<section class="newsletter">
     <div>
     <h2>rester à l’affût de nos nouveautés !</h2>
 
@@ -242,9 +205,9 @@ fr = valeur de l'attribut
 <!------------------------------- FOOTER ------------------------------->
 
 
-<footer class="footer"> <!--à styliser en CTA fond noir-->
-    <div class="cta"><a class ="cta_jaune" href="#">FAQ</a></div> <!--à styliser en CTA fond blanc-->
-    <div class="cta"><a class ="cta_jaune" href="#">Nous contacter</a></div> <!--à styliser en CTA fond blanc-->
+<footer class="footer">
+    <div class="cta"><a class ="cta_jaune" href="#">FAQ</a></div>
+    <div class="cta"><a class ="cta_jaune" href="#">Nous contacter</a></div>
     <div class="liens_some">
         <a class="logo_rs anim" href="#"><img class="tiktok2"  src="res\img\tiktok_white.webp" alt="logo Tiktok"></a>
         <a class="logo_rs anim" href="#"><img class="instagram2"  src="res\img\instagram_white.webp" alt="logo Instagram"></a>

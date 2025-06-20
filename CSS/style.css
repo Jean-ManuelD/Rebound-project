@@ -2,14 +2,14 @@
  @import url("https://use.typekit.net/wpx1aww.css");
 
 * {
-    box-sizing: border-box; /* règles de base à mettre au début pour faire comprendre aux éléments de ne pas dépasser, en taille, de leur parent */
+    box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------- GENERIQUE -----------------------------------------------------------------------*/
 
 
 body {
-    font-size: 16px; /* 1rem = valeur donc 16px ici*/
+    font-size: 16px;
     font-family: "futura-pt" , sans-serif;
     background: linear-gradient(324deg, #304CFF 34.39%, #304CFF 50.11%, #1D2E99 81.22%, #381D99 102.75%);
     margin:0;
@@ -186,7 +186,7 @@ h4 {
 .accroche {
     color: white;
     font-weight: 900;
-    line-height: 100%;   /* 48px */
+    line-height: 100%;
     text-transform: uppercase;
     margin-bottom:0%;
     display: block;
@@ -227,7 +227,6 @@ h4 {
 .titre_selection{
     text-align: center;
     width:100%;
-   /* margin:auto;*/
 }
 
 section.selection {
@@ -266,20 +265,15 @@ section.selection {
     align-items: start;
     gap: 1rem;
     width:calc(100%/3);
-    /*width:100%;*/
     min-width:280px;
     max-width: 400px;
     margin: 1rem 0;
-    /*gérer automatiquement la taille de mon élément : width :calc(100% / 3);  où 100% est la taille sur laquelle on souhaite gérer le positionnement et 3 le nb d'élément à positionner.
-     On rajouter un gap: 2rem; pour gérer l'espacement, à positionner dans l'élément parent.*/
     transition: transform 0.4s ease, opacity 0.4s ease;
     cursor: pointer;
     overflow: hidden;
 
 
 }
-
-
 
 
 
@@ -391,18 +385,12 @@ overflow-x: hidden;
 
 
 #avisPrev {
-    /*position: absolute;
-    left: 1rem;
-    margin-top: 3rem;*/
     border-style: none;
     background-color: #304CFF;
     cursor: pointer;
 }
 
 #avisNext {
-   /* position: absolute;
-    right: 1rem;
-    margin-top: 3rem;*/
     border-style: none;
     background-color: #304CFF;
     cursor: pointer;
@@ -469,7 +457,6 @@ overflow-x: hidden;
 .newsletter {
     background-color:#FAD55D;
     color:black;
-   /* margin: 0% auto;*/
 }
 
 .abonnement_newsletter {
@@ -583,31 +570,6 @@ footer {
 }
 
 
-
-
-
-/* 
-display block = les éléments sémantiques qui prennent toute la largeur ==> Figma Fill
-display inline = taille balise et non toute la largeur (genre img et liens) ===> Figma Hug
-inline-block = placer des éléments côte à côté / à coupler avec un width
-*/
-
-/*
-pour centrer des éléments : 
-Si display inline , mettree dans un div puis text-align:center;
-Si  display block -> margin 0 auto;
-*/
-
-
-/* display:flex ==> par défaut, direction en ligne donc row (idem pour row-reverse)
-    si je souhaite changer l'alignement horizontal j'utilise justify-content
-    si je souhaite gérer l'alignement vertical j'utilise align-items
-
-     si je change de direction, donc je passe en flex-direction :column;
-        dans ce cas-là, l'alignement horizontal j'utilise align-items 
-    i je souhaite gérer l'alignement vertical j'utilise justify-content (idem pour column-reverse)
-*/
-
 /*------------------------------------------------------------------------- RESPONSIVE desktop : 620px et 768px ---------------------------------------------------------------------------------*/
 @media screen and (min-width:620px) and (max-width:767px) {
 
@@ -642,39 +604,9 @@ header {
 }
 
 body {
-    font-size: 18px; /* 1rem = valeur donc 16px ici*/
+    font-size: 18px;
 }
 
-/*
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}*/
-/*
-.cta_jaune{
-    border-radius: 8px;
-    padding: 24px 40px; 
-}
-
-.cta_white{
-    border-radius: 8px;
-    padding: 24px 40px;
-}
-
-.cta_black{
-    border-radius: 8px;
-    padding: 24px 40px;
-}*/
 
 .landing_header {
     width:100%;
@@ -711,18 +643,11 @@ h4 {
 
 /*------------------------------------------------------------------------- RESPONSIVE desktop : 1024px ---------------------------------------------------------------------------------*/
 @media screen and (min-width:1024px) {
-/*
-.landing_header {
-    margin: 0 3rem 8rem 3rem;
-}*/
 
 header {
     margin: 0 0 -1rem 0;
 }
-/*
-.slider {
-    width: 50%;
-}*/
+
 
 .some_newsletter {
     display: flex;
